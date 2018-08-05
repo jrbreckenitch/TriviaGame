@@ -14,6 +14,37 @@ var incorrect = 0;
 var unanswered = 0;
 
 var timeDiv = $("<p>'Time Remaining: '</p>");
+var winDiv = $("<p>Correct Answer: " + correct  + "</p>");
+
+var lossDiv = $("<p>Wrong Answer: " + incorrect  + "</p>");
+
+
+// $('input[name=name_of_your_radiobutton]:checked').val();
+
+// var scoreCheck = function() {
+//     if ($('input[Vader]:checked', '#questions1').val() === true) {
+//         correct++;
+//         $("#correctAnswer").html(winDiv);
+//         // $("#wins").text("Wins:" + wins);
+//     }
+//     else if ($('input[Vader]:checked', '#questions1').val() === false) {
+//         incorrect++;
+//         $("#wrongAnswer").html(lossDiv);
+//         // $("#losses").text("Losses:" + incorrect);
+//     }
+// }
+
+var scoreCheck = function() {
+    // if ($('input:radio[name=q1]')[1].checked = true) {
+    if ($('input:radio[name=q1]')[1].checked === true) {
+        correct++;
+        $("#correctAnswer").html(winDiv);
+    }
+    else {
+        incorrect++;
+        $("#wrongAnswer").html(lossDiv);
+    }
+};
 
 $(".triviaQuestions").hide();
 $("#scoreBox").hide();
@@ -35,9 +66,12 @@ function countDown(){
         setTimeout(countDown,1000);
     }
     else if (n === 0) {
+        scoreCheck();
         $(".triviaQuestions").hide();
         $("#timeLeft").hide(); 
         $("#scoreBox").show();
+        console.log(correct);
+        console.log(incorrect);
     }
     console.log(n);
 }

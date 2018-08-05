@@ -28,13 +28,13 @@
         <div class="row scorePage">
             <p>All Done!</p>
         </div>
-        <div class="row scorePage">
+        <div class="row scorePage" id="correctAnswer">
             <p>Correct Answers: </p>
         </div>
-        <div class="row scorePage">
+        <div class="row scorePage" id="wrongAnswer">
             <p>Incorrect Answers: </p>
         </div>
-        <div class="row scorePage">
+        <div class="row scorePage" id="noAnswer">
             <p>Unanswered Questions: </p>
         </div>
     </div>
@@ -48,18 +48,18 @@
     <div class="row triviaQuestions">
         <p class="questionText">Who is Emperor Palpatine's favorite apprentice?</p>
         <!-- </div> -->
-        <form class="row questions">
+        <form class="row questions" id="questions1">
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="optradio"> Luke SkyWalker </label>
+                <label ><input class="checkmark" type="radio" name="q1" id="Luke" value="wrong"> Luke SkyWalker </label>
             </div>
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="optradio"> Darth Vader </label>
+                <label ><input class="checkmark" type="radio" name="q1" id="Vader" value="correct"> Darth Vader </label>
             </div>
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="optradio"> Boba Fett </label>
+                <label ><input class="checkmark" type="radio" name="q1" id="Boba" value="wrong"> Boba Fett </label>
             </div>
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="optradio"> Leia </label>
+                <label ><input class="checkmark" type="radio" name="q1" id="Leia" value="wrong"> Leia </label>
             </div>
         </form>
     </div>

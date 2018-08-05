@@ -20,13 +20,18 @@ body {
 
 .triviaQuestions {
     width: 100%;
-    margin: 20px auto;
+    margin: 25px auto;
     align-content: center;
     text-align: center;
     float: none;
     display: block;
     font-size: 1.5em;
 
+}
+
+.questionText {
+    font-size: 1.5em;
+    color: black;
 }
 
 .questions {
@@ -41,6 +46,8 @@ body {
 .checkmark {
     margin-right: 5px;
     margin-left: 5px;
+    text-align: center;
+    /* line-height: ; */
 }
 
 .colCenter {

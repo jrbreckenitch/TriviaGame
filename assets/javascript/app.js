@@ -35,15 +35,25 @@ var lossDiv = $("<p>Wrong Answer: " + incorrect  + "</p>");
 // }
 
 var scoreCheck = function() {
-    // if ($('input:radio[name=q1]')[1].checked = true) {
     if ($('input:radio[name=q1]')[1].checked === true) {
         correct++;
-        $("#correctAnswer").html(winDiv);
+    }
+    else if ($('input:radio[name=q1]')[0].checked === true) {
+        incorrect++;
+    }
+    else if ($('input:radio[name=q1]')[2].checked === true) {
+        incorrect++;
+    }
+    else if ($('input:radio[name=q1]')[3].checked === true) {
+        incorrect++;
     }
     else {
-        incorrect++;
-        $("#wrongAnswer").html(lossDiv);
+        unanswered++;
     }
+    $("#correctAnswer").html("<p>Correct Answers: " + correct + "</p>");
+    $("#wrongAnswer").html("<p>Wrong Answers: " + incorrect + "</p>");
+    $("#noAnswer").html("<p>Unanswered Questions: " + unanswered + "</p>");
+
 };
 
 $(".triviaQuestions").hide();
@@ -56,13 +66,13 @@ $("#startButton").on("click", function() {
     $(".triviaQuestions").show();
     $("#timeLeft").show();  
 
-var n = 10;
+var n = 6;
 setTimeout(countDown,1000);
 
 function countDown(){
     n--;
     if(n > 0){
-        $("#counter").html("<p>Seconds Remaining: </p>" + n )
+        $("#counter").html("<p>Seconds Remaining: " + n + "</p>")
         setTimeout(countDown,1000);
     }
     else if (n === 0) {

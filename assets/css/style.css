@@ -26,7 +26,25 @@ body {
     float: none;
     display: block;
     font-size: 1.5em;
+}
 
+.scorePage {
+    width: 100%;
+    margin: 2px auto;
+    align-content: center;
+    text-align: center;
+    float: none;
+    display: block;
+    font-size: 1.5em;
+}
+#timeLeft {
+    width: 100%;
+    margin: 2px auto;
+    align-content: center;
+    text-align: center;
+    float: none;
+    display: block;
+    font-size: 1.5em;
 }
 
 .questionText {

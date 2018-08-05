@@ -1,0 +1,62 @@
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background: #ff1a8c;
+    color: #33ffff;
+    padding: 75px 0px 75px 0px;
+    height: 100%;
+}
+
+.container {
+    background-color: #668cff;
+    color: #00ff00;
+    padding: 25px;
+    /* margin-top: 50px; */
+    margin: 25px auto;
+    /* margin-bottom: 50px; */
+    border: 2px solid #dddddd;
+    /* height: 500px; */
+    height: 90%;
+}
+
+.triviaQuestions {
+    width: 100%;
+    margin: 20px auto;
+    align-content: center;
+    text-align: center;
+    float: none;
+    display: block;
+    font-size: 1.5em;
+
+}
+
+.questions {
+    width: 100%;
+    margin: 20px auto;
+    align-content: center;
+    text-align: center;
+    float: none;
+    display: block;
+}
+
+.checkmark {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.colCenter {
+    float: none;
+    margin: 0 auto;
+}
+
+#gameTitle {
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+#startButton {
+    margin: 135px auto;
+    background-color: #33ffff;
+    color: #ff1a8c;
+    padding: 20px 60px;
+    font-size: 1.5em;
+}

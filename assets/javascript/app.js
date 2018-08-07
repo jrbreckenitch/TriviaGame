@@ -180,7 +180,7 @@ $("#startButton").on("click", function() {
     $(".triviaQuestions").show();
     $("#timeLeft").show();  
 
-var n = 31;
+var n = 121;
 setTimeout(countDown,1000);
 
 function countDown(){

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Trivia Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -15,7 +16,7 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-2 col-xs-offset-5 colCenter"  id="gameTitle">
-            <h1>Soccer Trivia</h1>
+            <p>Soccer Trivia</p>
         </div>
     </div>
     <div class="row emptyContent" id="startRow">
@@ -25,7 +26,7 @@
     </div>
 
     <div class="row" id="scoreBox">
-        <div class="row scorePage">
+        <div class="row scorePage" id="allDone">
             <p>All Done!</p>
         </div>
         <div class="row scorePage" id="correctAnswer">
@@ -49,16 +50,16 @@
         <p class="questionText">Who has scored the most goals in Champions League History?</p>
         <form class="row questions" id="questions1">
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q1" id="Luke" value="wrong"> Lionel Messi </label>
+                <label ><input class="checkmark" type="radio" name="q1" id="messiOne" value="wrong"> Lionel Messi </label>
             </div>
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q1" id="Vader" value="correct"> Ruud van Nistleroy </label>
+                <label ><input class="checkmark" type="radio" name="q1" id="ruud" value="wrong"> Ruud van Nistleroy </label>
             </div>
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q1" id="Boba" value="wrong"> Thierry Henry </label>
+                <label ><input class="checkmark" type="radio" name="q1" id="henry" value="wrong"> Thierry Henry </label>
             </div>
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q1" id="Leia" value="wrong"> Christiano Ronaldo </label>
+                <label ><input class="checkmark" type="radio" name="q1" id="ronaldoOne" value="correct"> Christiano Ronaldo </label>
             </div>
         </form>
     </div>
@@ -67,16 +68,16 @@
         <p class="questionText">Which country has won the most World cups?</p>
         <form class="row questions" id="questions1">
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q2" id="Luke" value="wrong"> Brasil </label>
+                <label ><input class="checkmark" type="radio" name="q2" id="brasilOne" value="correct"> Brasil </label>
             </div>
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q2" id="Vader" value="correct"> France </label>
+                <label ><input class="checkmark" type="radio" name="q2" id="franceOne" value="wrong"> France </label>
             </div>
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q2" id="Boba" value="wrong"> Argentina </label>
+                <label ><input class="checkmark" type="radio" name="q2" id="argentinaOne" value="wrong"> Argentina </label>
             </div>
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q2" id="Leia" value="wrong"> Germany </label>
+                <label ><input class="checkmark" type="radio" name="q2" id="germanyOne" value="wrong"> Germany </label>
             </div>
         </form>
     </div>
@@ -85,16 +86,16 @@
         <p class="questionText">The most expensive transfer was for which player?</p>
         <form class="row questions" id="questions1">
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q3" id="Luke" value="wrong"> Christiano Ronaldo </label>
+                <label ><input class="checkmark" type="radio" name="q3" id="ronaldo2" value="wrong"> Christiano Ronaldo </label>
             </div>
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q3" id="Vader" value="correct"> Gareth Bale </label>
+                <label ><input class="checkmark" type="radio" name="q3" id="bale" value="wrong"> Gareth Bale </label>
             </div>
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q3" id="Boba" value="wrong"> Kylian Mbappe </label>
+                <label ><input class="checkmark" type="radio" name="q3" id="mbappe" value="wrong"> Kylian Mbappe </label>
             </div>
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q3" id="Leia" value="wrong"> Neymar </label>
+                <label ><input class="checkmark" type="radio" name="q3" id="neymarOne" value="correct"> Neymar </label>
             </div>
         </form>
     </div>
@@ -103,16 +104,16 @@
         <p class="questionText">What team has won the most English Premier League titles?</p>
         <form class="row questions" id="questions1">
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q4" id="Luke" value="wrong"> Mancheser United </label>
+                <label ><input class="checkmark" type="radio" name="q4" id="manU" value="correct"> Mancheser United </label>
             </div>
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q4" id="Vader" value="correct"> Manchester City </label>
+                <label ><input class="checkmark" type="radio" name="q4" id="manCityOne" value="wrong"> Manchester City </label>
             </div>
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q4" id="Boba" value="wrong"> Liverpool </label>
+                <label ><input class="checkmark" type="radio" name="q4" id="liverpool" value="wrong"> Liverpool </label>
             </div>
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q4" id="Leia" value="wrong"> Chelsea </label>
+                <label ><input class="checkmark" type="radio" name="q4" id="chelsea" value="wrong"> Chelsea </label>
             </div>
         </form>
     </div>
@@ -121,16 +122,16 @@
         <p class="questionText">What soccer club had the most players at the 2018 World Cup?</p>
         <form class="row questions" id="questions1">
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q5" id="Luke" value="wrong"> Real Madrid </label>
+                <label ><input class="checkmark" type="radio" name="q5" id="madridOne" value="wrong"> Real Madrid </label>
             </div>
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q5" id="Vader" value="correct"> Manchester City </label>
+                <label ><input class="checkmark" type="radio" name="q5" id="manCityTwo" value="correct"> Manchester City </label>
             </div>
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q5" id="Boba" value="wrong"> Barcelona </label>
+                <label ><input class="checkmark" type="radio" name="q5" id="barcaOne" value="wrong"> Barcelona </label>
             </div>
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q5" id="Leia" value="wrong"> Paris Saint-Germain </label>
+                <label ><input class="checkmark" type="radio" name="q5" id="psgOne" value="wrong"> Paris Saint-Germain </label>
             </div>
         </form>
     </div>
@@ -139,16 +140,16 @@
         <p class="questionText">Which USA player has the most international team goals?</p>
         <form class="row questions" id="questions1">
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q6" id="Luke" value="wrong"> Landon Donovan </label>
+                <label ><input class="checkmark" type="radio" name="q6" id="landon" value="wrong"> Landon Donovan </label>
             </div>
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q6" id="Vader" value="correct"> Jozy Altidore </label>
+                <label ><input class="checkmark" type="radio" name="q6" id="jozy" value="wrong"> Jozy Altidore </label>
             </div>
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q6" id="Boba" value="wrong"> Brian McBride </label>
+                <label ><input class="checkmark" type="radio" name="q6" id="brian" value="wrong"> Brian McBride </label>
             </div>
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q6" id="Leia" value="wrong"> Clint Dempsey </label>
+                <label ><input class="checkmark" type="radio" name="q6" id="clint" value="correct"> Clint Dempsey </label>
             </div>
         </form>
     </div>
@@ -157,16 +158,16 @@
         <p class="questionText">What European club has won the most Champions League titles?</p>
         <form class="row questions" id="questions1">
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q7" id="Luke" value="wrong"> Real Madrid </label>
+                <label ><input class="checkmark" type="radio" name="q7" id="madridTwo" value="correct"> Real Madrid </label>
             </div>
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q7" id="Vader" value="correct"> AC Milan </label>
+                <label ><input class="checkmark" type="radio" name="q7" id="milan" value="wrong"> AC Milan </label>
             </div>
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q7" id="Boba" value="wrong"> Bayern Munich </label>
+                <label ><input class="checkmark" type="radio" name="q7" id="bayern" value="wrong"> Bayern Munich </label>
             </div>
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q7" id="Leia" value="wrong"> Barcelona </label>
+                <label ><input class="checkmark" type="radio" name="q7" id="barcaTwo" value="wrong"> Barcelona </label>
             </div>
         </form>
     </div>
@@ -175,77 +176,19 @@
         <p class="questionText">What team won the inaugural Major League Soccer Cup?</p>
         <form class="row questions" id="questions1">
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q8" id="Luke" value="wrong"> Los Angeles Galaxy </label>
+                <label ><input class="checkmark" type="radio" name="q8" id="galaxy" value="wrong"> Los Angeles Galaxy </label>
             </div>
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q8" id="Vader" value="correct"> New England Revolution </label>
+                <label ><input class="checkmark" type="radio" name="q8" id="rev" value="wrong"> New England Revolution </label>
             </div>
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q8" id="Boba" value="wrong"> DC United </label>
+                <label ><input class="checkmark" type="radio" name="q8" id="dcUnited" value="correct"> DC United </label>
             </div>
             <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="q8" id="Leia" value="wrong"> Columbus Crew </label>
+                <label ><input class="checkmark" type="radio" name="q8" id="crew" value="wrong"> Columbus Crew </label>
             </div>
         </form>
     </div>
-
-    <!-- <div class="row triviaQuestions">
-        <p class="questionText">Who is Emperor Palpatine's favorite apprentice?</p>
-        <form class="row questions">
-            <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="optradio"> Luke SkyWalker </label>
-            </div>
-            <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="optradio"> Darth Vader </label>
-            </div>
-            <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="optradio"> Boba Fett </label>
-            </div>
-            <div class="radio custom-control-inline">
-                <label ><input class="checkmark" type="radio" name="optradio"> Leia </label>
-            </div>
-        </form>
-    </div> -->
-
-    <!-- <div class="row triviaQuestions">
-        <p class="questionText">Who is Emperor Palpatine's favorite apprentice?</p>
-        <form class="row questions">
-            <div class="radio custom-control-inline">
-                <label><input type="radio" name="optradio">Luke SkyWalker</label>
-            </div>
-            <div class="radio custom-control-inline">
-                <label><input type="radio" name="optradio">Darth Vader</label>
-            </div>
-            <div class="radio custom-control-inline">
-                <label><input type="radio" name="optradio">Boba Fett</label>
-            </div>
-            <div class="radio custom-control-inline">
-                <label><input type="radio" name="optradio">Leia</label>
-            </div>         
-        </form>
-    </div>
-
-    <div class="row triviaQuestions">
-            <p class="questionText">Who is Emperor Palpatine's favorite apprentice?</p>
-        <div class="row questions">
-            <label class="">
-                <input type="radio" name="radio">
-                <span class="checkmark"> Luke SkyWalker </span>
-            </label>
-            <label class="">
-                <input type="radio" name="radio">
-                <span class="checkmark"> Boba Fett </span>
-            </label>
-            <label class="">
-                <input type="radio" name="radio">
-                <span class="checkmark"> Admiral Tarkin </span>
-            </label>
-            <label class="">
-                <input type="radio" name="radio">
-                <span class="checkmark"> Princess Leia </span>
-            </label>
-        </div>
-    </div> -->
 
 </body>
 </html>

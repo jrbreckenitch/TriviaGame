@@ -1,9 +1,10 @@
 body {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    /* font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; */
     /* background: #cccccc; */
+    font-family: 'Ubuntu', sans-serif;
     background-image: url(../images/pexels-photo-1171084.jpeg);
     background-size: 100%;
-    color: #33ffff;
+    color: #990000;
     padding: 75px 0px 75px 0px;
     height: 100%;
 }
@@ -13,7 +14,7 @@ body {
     ;
     /* background-image: url(../images/liverpoolStripes.jpg); */
     background-size: 100%;
-    color: #663300;
+    color: #990000;
     padding: 25px;
     /* margin-top: 50px; */
     margin: 25px auto;
@@ -42,6 +43,12 @@ body {
     display: block;
     font-size: 1.5em;
 }
+
+#allDone {
+    font-size: 40px;
+    font-weight: 800;
+}
+
 #timeLeft {
     width: 100%;
     margin: 2px auto;
@@ -81,11 +88,14 @@ body {
 #gameTitle {
     margin-top: 75px;
     margin-bottom: 75px;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-size: 60px;
+    font-weight: 700;
 }
 
 #startButton {
     margin: 135px auto;
-    background-color: black;
+    background-color: #990000;
     color: #cccccc;
     padding: 20px 60px;
     font-size: 1.5em;

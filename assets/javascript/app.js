@@ -13,10 +13,10 @@ var incorrect = 0;
 
 var unanswered = 0;
 
-var timeDiv = $("<p>'Time Remaining: '</p>");
-var winDiv = $("<p>Correct Answer: " + correct  + "</p>");
+// var timeDiv = $("<p>'Time Remaining: '</p>");
+// var winDiv = $("<p>Correct Answer: " + correct  + "</p>");
 
-var lossDiv = $("<p>Wrong Answer: " + incorrect  + "</p>");
+// var lossDiv = $("<p>Wrong Answer: " + incorrect  + "</p>");
 
 
 var scoreCheck1 = function() {
